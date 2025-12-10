@@ -1,87 +1,89 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "glass-easel",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2563eb",
+    "light": "#3b82f6",
+    "dark": "#1d4ed8"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "基础特性",
+        "pages": [
+          "guide/zh_CN/index",
+          "guide/zh_CN/basic/beginning",
+          "guide/zh_CN/basic/template",
+          "guide/zh_CN/basic/component",
+          "guide/zh_CN/basic/lifetime",
+          "guide/zh_CN/basic/method",
+          "guide/zh_CN/basic/event"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "组件间交互",
+        "pages": [
+          "guide/zh_CN/interaction/slot",
+          "guide/zh_CN/interaction/behavior",
+          "guide/zh_CN/interaction/trait_behavior",
+          "guide/zh_CN/interaction/component_path",
+          "guide/zh_CN/interaction/relation",
+          "guide/zh_CN/interaction/placeholder",
+          "guide/zh_CN/interaction/generic",
+          "guide/zh_CN/interaction/template_import"
+        ]
+      },
+      {
+        "group": "数据控制",
+        "pages": [
+          "guide/zh_CN/data_management/advanced_update",
+          "guide/zh_CN/data_management/data_observer",
+          "guide/zh_CN/data_management/data_deep_copy",
+          "guide/zh_CN/data_management/property_early_init",
+          "guide/zh_CN/data_management/pure_data_pattern"
+        ]
+      },
+      {
+        "group": "样式控制",
+        "pages": [
+          "guide/zh_CN/styling/style_isolation",
+          "guide/zh_CN/styling/external_class",
+          "guide/zh_CN/styling/virtual_host"
+        ]
+      },
+      {
+        "group": "节点树访问",
+        "pages": [
+          "guide/zh_CN/tree/node_tree",
+          "guide/zh_CN/tree/element_iterator",
+          "guide/zh_CN/tree/selector",
+          "guide/zh_CN/tree/mutation_observer",
+          "guide/zh_CN/tree/node_tree_modification"
+        ]
+      },
+      {
+        "group": "高级特性",
+        "pages": [
+          "guide/zh_CN/advanced/component_space",
+          "guide/zh_CN/advanced/component_filter",
+          "guide/zh_CN/advanced/binding_map_update",
+          "guide/zh_CN/advanced/custom_backend",
+          "guide/zh_CN/advanced/template_engine",
+          "guide/zh_CN/advanced/external_component",
+          "guide/zh_CN/advanced/error_listener",
+          "guide/zh_CN/advanced/build_args"
+        ]
+      },
+      {
+        "group": "附录",
+        "pages": [
+          "guide/zh_CN/appendix/backend_protocol",
+          "guide/zh_CN/appendix/list_diff_algorithm"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -90,33 +92,26 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/toeverything/blocksuite"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/toeverything/blocksuite"
     }
   }
 }
